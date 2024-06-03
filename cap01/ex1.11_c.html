@@ -1,0 +1,13 @@
+<!--
+    Capitulo 1 - exercicio c)
+    Elaborar um programa para uma loja, o qual leia o preço de um produto e informe as opções de pagamento da loja.
+    Calcule e informe o valor para pagamento à vista com 10% de desconto e o valor em 3x.
+-->
+
+<meta charset="UTF-8">
+<script>
+    const valorProduto = Number(prompt("Informe o valor do produto: "));
+    const valorAVista = valorProduto * 0.9;
+    const valorParcelado = valorProduto / 3;
+    alert(`O valor do produto é: R$${valorProduto.toFixed(2)}.\nAs opções de pagamento são:\nValor a vista: R$${valorAVista.toFixed(2)}.\nOu parcelado em 3x de R$${valorParcelado.toFixed(2)}.`)
+</script>
