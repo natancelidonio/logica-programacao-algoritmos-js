@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="img/livrojs.png">
+    <title>Exemplo do..while</title>
+</head>
+<body>
+    <script>
+        let num
+        do {
+            num = Number(prompt("Número: "))
+            if (num == 0 || isNaN(num)) {
+                alert("Digite um número válido... idiota >.<")
+            }
+        } while (num == 0 || isNaN(num))
+        let pares = `Pares entre 1 e ${num}: `
+        for (let i = 2; i <= num; i = i + 2) {
+            pares = pares + i + ","
+        }
+        alert(pares)
+    </script>
+</body>
+</html>
