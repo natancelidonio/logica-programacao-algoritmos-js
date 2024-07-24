@@ -47,4 +47,5 @@ frm.btAtender.addEventListener("click", () => {
     respNome.innerText = atender;     // exibe o nome do paciente em atendimento
     let lista = "";     // string para concatenar pacientes
     pacientes.forEach((paciente, i) => (lista += `${i+1}. ${paciente}\n`));     // exibe a lista de pacientes na página
+    respLista.innerText = lista;     // exibe a lista de pacientes na página
 })
