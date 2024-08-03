@@ -22,7 +22,7 @@ frm.addEventListener("submit", (e) => {     // "escuta" evento submit do form
             const numErros = erros.length;     // obtém tamanho do array
             const numChaces = CHANCES - numErros;     // calcula n° de chances
             // exibe n° de erros, conteúdo do array e n° de chances
-            respErros.innerText = `${numErros} (${erro.join(", ")})`;
+            respErros.innerText = `${numErros} (${erros.join(", ")})`;
             respChances.innerText = numChaces;
             if (numChaces == 0) {
                 alert("Suas chances acabaram...");
@@ -39,4 +39,8 @@ frm.addEventListener("submit", (e) => {     // "escuta" evento submit do form
     }
     frm.inNumero.value = "";     // limpa campo de entrada
     frm.inNumero.focus();     // posiciona o cursor neste campo
+})
+
+frm.btNovo.addEventListener("click", () => {
+    location.reload();     // recarrega a página
 })
