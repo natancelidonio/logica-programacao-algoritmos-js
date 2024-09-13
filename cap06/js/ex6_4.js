@@ -1,5 +1,5 @@
 const frm = document.querySelector("form");     // obtém elementos da página
-const resp = documento.querySelector("pre");
+const resp = document.querySelector("pre");
 
 const criancas = [];     // declara vetor global
 

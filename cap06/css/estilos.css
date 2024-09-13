@@ -10,6 +10,12 @@ img.alta {
     width: 300px;
 }
 
+img.altaLarge {
+    float: left;
+    height: 420px;
+    width: 420px;
+}
+
 h1 {
     border-bottom-style: inset;
 }
